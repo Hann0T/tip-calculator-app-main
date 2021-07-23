@@ -1,1 +1,6 @@
 // importar los estilos de estado sobre todo los que generen dependencia de JS
+
+.is-active {
+    background-color: $Strong-cyan !important;
+    color: $Very-dark-cyan !important;
+}

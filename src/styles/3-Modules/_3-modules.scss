@@ -1,3 +1,61 @@
 // BEM => B -> block
 // Aca van todos los estilos de bloque, los bloques que son independientes de la pagina
 // y son reutilizables
+
+.calculator {
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    &__left,
+    &__right {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+.calculator__bill-input,
+.calculator__people-input {
+    label {
+        display: block;
+    }
+    input[type=number] {
+        width: 100%;
+    }
+}
+
+.calculator__tip-input {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px,1fr));
+    gap: 15px;
+    margin: auto 0;
+}
+.calculator__tip-title {
+    grid-column: 1 / span 3;
+    font-size: 16px;
+}
+
+.tip-button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: .5em 1em;
+}
+.calculator__output {
+    display: flex;
+    justify-content: space-between;
+}
+.calculator__text--lighter {
+    display: block;
+}
+.reset-button {
+    margin-top: auto;
+    box-sizing: border-box;
+    padding: .5em 1em;
+}
